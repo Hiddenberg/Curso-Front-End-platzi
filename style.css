@@ -29,11 +29,11 @@ body {
    list-style: none;
    width: 100px;
    text-align: right;
-   margin-left: -14px;
 }
 .header__menu:hover ul, ul:hover {
    display: block;
    margin: 0;
+   margin-left: -5px;
 }
 .header__menu li {
    margin: 10px 0;
