@@ -12,7 +12,6 @@ body {
    align-items: center;
    justify-content: space-between;
 }
-
 .header__img {
    width: 200px;
    margin-left: 30px;
@@ -56,4 +55,37 @@ body {
 .header__menu--profile img{
    height: 50px;
    margin-right: 5px;
+}
+
+/* styles for the search bar section */
+
+.search {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 300px;
+   justify-content: space-evenly;
+}
+
+.search__title {
+   color: white;
+}
+
+.input {
+   width: 70vw;
+   height: 40px;
+   border-radius: 25px;
+   padding-left: 1.5em;
+   border: 2px solid white;
+   background-color: #b798ff;
+   color: white;
+   font-weight: 600;
+}
+.input::placeholder {
+   color: white;
+   font-weight: 600;
+}
+.input:focus {
+   outline: none;
+   border-color: #8f57fd;
 }
