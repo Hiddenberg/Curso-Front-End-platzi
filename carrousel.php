@@ -11,6 +11,7 @@
       <div class="carousel__container">
          <?php
          $images = scandir("./carousel-img");
+         shuffle($images);
          foreach ($images as $image) {
             if ($image != "." and $image != "..") {
                echo "
