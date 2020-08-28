@@ -1,8 +1,23 @@
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 0;
+}
+form {
+   margin: 10px 0;
+   text-align: center;
+}
+
 .carousel {
    width: 100%;
    overflow: scroll;
    padding-left: 30px;
    position: relative;
+
+   background: hsla(164, 38%, 18%, 1);
+   background: linear-gradient(180deg, hsla(164, 38%, 18%, 1) 0%, hsla(158, 77%, 77%, 1) 100%);
+   background: -moz-linear-gradient(180deg, hsla(164, 38%, 18%, 1) 0%, hsla(158, 77%, 77%, 1) 100%);
+   background: -webkit-linear-gradient(180deg, hsla(164, 38%, 18%, 1) 0%, hsla(158, 77%, 77%, 1) 100%);
+   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1C3E35", endColorstr="#99F2D1", GradientType=1 );
 }
 .carousel__container {
    white-space: nowrap;
@@ -46,7 +61,7 @@
    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%);
    font-size: 10px;
    color: aliceblue;
-   opacity: 1;
+   opacity: 0;
    transition: 150ms opacity;
    padding: 10px;
    position: absolute;
@@ -55,7 +70,14 @@
    right: 0;
    bottom: 0;
 }
+.carousel-item__details:hover{
+   opacity: 1;
+}
+
 .details-icon {
-   width: 40px;
-   height: 40px;
+   width: 30px;
+   height: 30px;
+}
+.details-icon:hover {
+   filter: brightness(1.2);
 }
