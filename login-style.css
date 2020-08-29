@@ -137,3 +137,12 @@
    border-bottom: #00ffaa solid 2px;
    outline: none;
 }
+
+
+/* ----------- */
+
+.existing-account {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
