@@ -12,7 +12,7 @@
 .login__container {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-around;
    align-items: center;
    padding: 60px 40px;
    min-height: min-content;
@@ -46,18 +46,28 @@
 .login__container--remember-section a:hover{
    text-decoration: underline;
 }
+.login__container--remember-section a:focus{
+   border-bottom: solid #00ffaa 2px;
+   outline: none;
+}
+.login__container--remember-section input:focus{
+   outline-color: #00ffaa;
+}
 
+.login__container--social-media{
+   margin: 30px 0 10px;
+}
 .login__container--social-media > div {
-   padding: 20px 0;
+   padding: 10px 0;
 }
 .login__container--social-media > div span{
    font-size: 1.2em;
    vertical-align: middle;
-   margin-left: 5px;
+   margin-left: 10px;
 }
 .login__container--social-media > div img{
-   height: 35px;
-   width: 35px;
+   height: 30px;
+   width: 30px;
    vertical-align: middle;
 }
 
@@ -70,6 +80,10 @@
 }
 .login__container--register a:hover {
    text-decoration: underline;
+}
+.login__container--register a:focus {
+   border-bottom: solid #00ffaa 2px;
+   outline: none;
 }
 
 .login--input {
@@ -85,4 +99,41 @@
 .login--input::placeholder{
    color: white;
    font-size: 1.2rem;
+}
+.login--input:focus{
+   outline: none;
+   border-bottom: solid 2px #00ffaa;
+}
+
+.login--buton {
+   background-color: rgba(250, 255, 255, 0.1);
+   border: solid white 2px;
+   border-radius: 25px;
+   height: 3em;
+   color: white;
+   letter-spacing: 1px;
+   font-weight: 700;
+}
+.login--buton:hover, .login--buton:focus {
+   border-color: #00ffaa;
+   outline: none;
+}
+
+.footer {
+   display: flex;
+   height: 5vh;
+   width: 100%;
+   justify-content: space-around;
+   align-items: center;
+}
+.footer a {
+   color: white;
+   text-decoration: none;
+}
+.footer a:hover {
+   text-decoration: underline;
+}
+.footer a:focus {
+   border-bottom: #00ffaa solid 2px;
+   outline: none;
 }
