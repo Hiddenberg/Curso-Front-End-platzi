@@ -12,12 +12,21 @@ form {
    overflow: scroll;
    padding-left: 30px;
    position: relative;
+   overflow-y: hidden;
 
-   background: hsla(164, 38%, 18%, 1);
+   /* background: hsla(164, 38%, 18%, 1);
    background: linear-gradient(180deg, hsla(164, 38%, 18%, 1) 0%, hsla(158, 77%, 77%, 1) 100%);
    background: -moz-linear-gradient(180deg, hsla(164, 38%, 18%, 1) 0%, hsla(158, 77%, 77%, 1) 100%);
    background: -webkit-linear-gradient(180deg, hsla(164, 38%, 18%, 1) 0%, hsla(158, 77%, 77%, 1) 100%);
-   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1C3E35", endColorstr="#99F2D1", GradientType=1 );
+   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1C3E35", endColorstr="#99F2D1", GradientType=1 ); */
+}
+.carousel::-webkit-scrollbar {
+   background-color: rgba(0, 0, 0, 0.1);
+   height: 10px;
+   width: 100%;
+}::-webkit-scrollbar-thumb {
+   background-color: #8f57fd;
+   border-radius: 25px;
 }
 .carousel__container {
    white-space: nowrap;
