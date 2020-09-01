@@ -1,4 +1,4 @@
-.header {
+/* .header {
    background-color: #21C08B;
 }
 .login {
@@ -117,11 +117,13 @@
 .login--buton:hover, .login--buton:focus {
    border-color: #00ffaa;
    outline: none;
-}
+} */
 
-.footer {
+/* .footer {
+   position: absolute;
+   bottom: 0;
    display: flex;
-   height: 5vh;
+   height: 10vh;
    width: 100%;
    justify-content: space-around;
    align-items: center;
@@ -136,7 +138,7 @@
 .footer a:focus {
    border-bottom: #00ffaa solid 2px;
    outline: none;
-}
+} */
 
 
 /* ----------- */
@@ -148,11 +150,11 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
    .login__container {
       background-color: transparent;
       border: none;
       padding: 0;
       box-shadow: none;
    }
-}
+} */
